@@ -1,0 +1,25 @@
+REACT_APP_FIREBASE_API_KEY=AIzaSyBCsw4AbappnAEXB7WyptPvh0qYjMtjTec
+REACT_APP_FIREBASE_AUTH_DOMAIN=foodfusion-9f3a7.firebaseapp.com
+REACT_APP_FIREBASE_PROJECT_ID=foodfusion-9f3a7
+REACT_APP_FIREBASE_STORAGE_BUCKET=foodfusion-9f3a7.firebasestorage.app
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=501318173881
+REACT_APP_FIREBASE_APP_ID=1:501318173881:web:b159205fd040525a874768
+REACT_APP_FIREBASE_MEASUREMENT_ID=G-EL5PLGJN8W
+
+
+echo "# Food_Delivery_App" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/abhinavkumar1911/Food_Delivery_App.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/abhinavkumar1911/Food_Delivery_App.git
+git branch -M main
+git push -u origin main
+
+
+npm install compression
+npm install sweetalert2

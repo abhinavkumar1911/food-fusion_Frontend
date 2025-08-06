@@ -1,0 +1,36 @@
+.order-status-tracker {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #ccc;
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  color: #888;
+  position: relative;
+}
+
+.step::before {
+  content: "";
+  height: 6px;
+  width: 100%;
+  background-color: #ddd;
+  position: absolute;
+  top: -8px;
+  left: 0;
+  z-index: -1;
+}
+
+.step.active {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.step.active::before {
+  background-color: #28a745;
+}

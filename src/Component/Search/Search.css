@@ -1,0 +1,30 @@
+.search-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search-results {
+  margin-top: 10px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.search-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}

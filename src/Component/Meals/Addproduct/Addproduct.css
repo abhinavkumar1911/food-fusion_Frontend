@@ -1,0 +1,9 @@
+.form-label-custom {
+  font-weight: bold;
+  text-align: right;
+  display: block;
+}
+
+.product-table-container {
+  margin-top: 100px; /* Adjust this if your navbar is taller/shorter */
+}

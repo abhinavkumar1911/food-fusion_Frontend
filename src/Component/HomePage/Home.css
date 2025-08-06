@@ -1,0 +1,203 @@
+/* Background color of navbar */
+.custom-navbar {
+  background-color: #d6e1db17 !important; /* Custom dark blue or your preferred color */
+}
+
+/* Navbar links - hover and focus styles */
+.navbar-nav .nav-link {
+  position: relative;
+  color: #090909 !important;
+  transition: color 0.5s ease;
+}
+
+/* Hover and focus effect: underline with color */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #2a41b6 !important; /* Change text color on hover/focus */
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link:not(.active)::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 1px;
+  background: #0e0e0e; /* underline color */
+  transition: width 0.4s;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+}
+
+.navbar-nav .nav-link:not(.active):hover::after {
+  width: 100%;
+}
+
+/* Always show underline for active link */
+.navbar-nav .nav-link.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #0e0e0e;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+}
+.navbar-brand {
+  font-weight: 700; /* or bold */
+  font-size: 1.25rem; /* optional: make it a bit larger */
+  color: rgb(201, 22, 22) !important; /* ensure it's visible on dark background */
+}
+
+/*Search icon */
+.nav-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-wrapper {
+  position: relative;
+  flex: 1; /* make it expand */
+}
+
+.search-box {
+  width: 100%;
+  padding: 8px 8px 8px 32px; /* space for icon */
+  border: 1px solid #afaf18;
+  border-radius: 14px;
+  font-size: 14px;
+}
+
+.search-box::placeholder {
+  font-size: 12px;
+  color: #aa8118;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+ left: 10px;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 18px;
+  color: #333;
+}
+
+
+.icon-button:focus {
+  outline: none;
+}
+
+.icon-button:hover {
+  color: #007bff; /* Optional: hover effect */
+}
+
+.blue-text {
+  color: rgb(5, 5, 5) !important;
+  font-weight: bold;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -6px;
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.header {
+    height: 34vw;
+    margin: 30px auto;
+    margin-top: 90px;
+    background-image: url('../../../public/Images/header_img.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: contain;
+  background-position: center center; /* Center the image both horizontally and vertically */
+   z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.header-contents{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  max-width: 60%;
+  bottom: 5%;
+  left: 10vw;
+  animation: fadeIn 3s;
+}
+.header-contents h2{
+  font-weight: 500;
+  color: white;
+  font-size: max(4.5vw,22px);
+}
+.header-contents p{
+  color: white;
+  font-size: 1vw;
+}
+.header-contents button{
+  border: none;
+  color: #747474;
+  font-weight: 500;
+  padding: 5vw,3.3vw;
+  background-color: whitesmoke;
+  font-size: max(0.7vw,12px);
+  border-radius: 50px;
+  transition: all,0.3s,ease-in-out;
+  padding-left: 1vw;
+  padding-right: 1vw;
+
+}
+
+
+.header-contents button:hover {
+  animation: blink 0.8s steps(2, start) infinite;
+}
+
+/* Home.css */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db; /* blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+/* Spin animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

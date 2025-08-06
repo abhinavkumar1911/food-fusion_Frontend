@@ -1,0 +1,98 @@
+/* ShowProduct.css */
+
+.table td,
+.table th {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table th {
+  background-color: #343a40;
+  color: white;
+}
+
+.image-cell img {
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  padding: 4px;
+  transition: transform 0.2s;
+}
+
+.action-btn:hover {
+  transform: scale(1.1);
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #e9f5ff;
+}
+
+.no-products {
+  color: #888;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+}
+.top-offset {
+  margin-top: 90px;
+}
+.product-table-container {
+  margin-top: 100px; /* Adjust this if your navbar is taller/shorter */
+}
+
+.table-scroll-container {
+  max-height: 500px; /* adjust height as needed */
+  overflow-y: auto;
+}
+
+.sticky-header th {
+  position: sticky;
+  top: 0;
+  background-color: #0a0a0a85 !important; /* match Bootstrap .table-primary */
+  z-index: 2;
+}
+
+.table-scroll-container {
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  overflow-y: auto;
+}
+
+/* Make the table body scrollable */
+.table-scroll-container {
+  max-height: 500px;   /* or any height you want */
+  overflow-y: auto;
+}
+
+/* Make the table full width inside wrapper */
+.product-table {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Sticky header */
+.sticky-header th {
+  position: sticky;
+  overflow-y: auto;
+  top: 0;
+  z-index: 10;
+  background-color: #e3f2fd; /* Same as .table-primary */
+  color: #000;
+  text-align: center;
+}
+
+/* Prevent entire screen from scrolling */
+/*html, body {
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}*/
